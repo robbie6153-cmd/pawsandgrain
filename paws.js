@@ -768,24 +768,23 @@ if (adminLoginButton) {
         }
 
       }
-      catch (error) {
+ catch (error) {
 
-        console.error(
-          "Admin login failed:",
-          error
-        );
+  console.error(
+    "Admin login failed:",
+    error
+  );
 
+  if (
+    adminLoginMessage
+  ) {
 
-        if (
-          adminLoginMessage
-        ) {
+    adminLoginMessage.textContent =
+      `Login failed: ${error.code || error.message}`;
 
-          adminLoginMessage.textContent =
-            "Incorrect email or password.";
+  }
 
-        }
-
-      }
+}
       finally {
 
         adminLoginButton.disabled =
