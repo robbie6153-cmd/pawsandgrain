@@ -60,7 +60,7 @@ import {
 const firebaseConfig = {
 
   apiKey:
-    "AIzaSyCxfYyKE11i_bGou4SpENcROXMuWc-703g",
+    "AIzaSyCxfYyKE11i_bGou4SpENcROXMuWc-7O3g",
 
   authDomain:
     "paws-and-grain.firebaseapp.com",
